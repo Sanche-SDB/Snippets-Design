@@ -3,18 +3,19 @@
     width: 80%;
     max-width: 800px;
     margin: 40px auto;
-    background-color: #ffffff;
+    background: linear-gradient(135deg,  #E4277D, #FFB300); /* Gradient background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: white; /* Ensure text is readable on the gradient */
 }
 
 .snippets-container h2 {
-    font-size: 24px;
-    color: #333;
+    font-size: 28px;
+    color: white; /* White text for contrast */
     text-align: center;
     margin-bottom: 20px;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Subtle bottom border */
     padding-bottom: 10px;
 }
 
@@ -25,32 +26,33 @@
 }
 
 .snippets-container .ql-container {
-    height: 351px; /* Increased height */
+    height: 351px; /* Height of the editor */
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border to match the gradient */
     width: 655px;
 }
 
 .snippets-container .ql-toolbar {
     border-radius: 5px 5px 0 0;
-    background-color: #f8f8f8;
+    background-color: rgba(248, 248, 248, 0.8); /* Slightly transparent toolbar */
 }
 
 .snippets-container .ql-editor {
     border-radius: 0 0 5px 5px;
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
     color: #333;
     font-size: 16px;
-    height: 350px; /* Increase the editor height */
+    height: 350px; /* Height of the editor */
     width: 650px;
 }
 
 .snippets-container button {
-    background-color: #007bff;
+    background: #E4277D;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -58,7 +60,8 @@
 }
 
 .snippets-container button:hover {
-    background-color: #0056b3;
+    background:white; 
+    color: #E4277D;
 }
 
 .snippets-container .mt-4 {
@@ -72,17 +75,18 @@
 .snippets-container .output-container {
     margin-top: 30px;
     padding: 15px;
-    background-color: #f7f7f7;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
     border-radius: 10px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border matching the gradient */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #333; /* Text color inside output container */
 }
 
 .snippets-container .output-container h3 {
     font-size: 20px;
-    color: #555;
+    color: #E4277D; /* Match the gradient color */
     margin-bottom: 15px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid rgba(226, 39, 125, 0.3); /* Subtle bottom border */
     padding-bottom: 5px;
 }
 
@@ -91,4 +95,54 @@
     line-height: 1.6;
     color: #444;
     white-space: pre-wrap;
+}
+
+/* Date and Number input fields styling */
+#date-input, #number-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border to match the gradient */
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    color: #333; /* Text color */
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-group .input-container {
+    width: 48%; /* Adjusted width for side-by-side layout */
+}
+
+.mr-2 {
+    margin-right: 8px;
+}
+
+.graphic-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border to match the gradient */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align buttons to the left */
+}
+
+.button-group button {
+    width: 100%; /* Ensure buttons are full width */
 }
